@@ -26,3 +26,4 @@
   * `- ~/.composer:/root/.composer` para apontar o cache do composer pra nossa pasta de usuário.
   * `Composer.json:` Dependências necessárias.
   * `Composer.lock:` Dependências Instaladas.
+  * A dependência `hirak/prestissimo` serve para deixar os downloads do composer ocorram em paralelo. Foi adicionado no `entrypoint.sh` na execução do container.
