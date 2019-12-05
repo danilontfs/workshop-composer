@@ -16,6 +16,7 @@
   * O `require` é apenas pra produção, em desenvolvimento o correto é utilizar o `require-dev`
   * Adicionar uma dependência no dev: `composer require vlucas/phpdotenv -dev`
   * Instalar dependências em produção: `composer install --no-dev`
+  * Atualizar autoload: `composer dump-autoload`
 
 * **Comandos GIT**
   * Configurações do git: `cat .git/config`
