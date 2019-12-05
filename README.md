@@ -9,8 +9,13 @@
   * Executar composer no php: `docker-compose exec php7 composer --version`
 
 * **Comandos Composer**
-  * Adicionar uma dependência (pacote): `docker-compose exec php7 composer require vlucas/phpdotenv`
-  * Adicionar uma dependência (pacote) com verbose: `docker-compose exec php7 composer require vlucas/phpdotenv -vvv`
+  * Adicionar uma dependência (pacote): `composer require vlucas/phpdotenv`
+  * Adicionar uma dependência (pacote) com verbose: `composer require vlucas/phpdotenv -vvv`
+  * Instalar dependências do composer.json: `composer install`
+  * Atualizar dependências do composer.json: `composer update`
+  * O `require` é apenas pra produção, em desenvolvimento o correto é utilizar o `require-dev`
+  * Adicionar uma dependência no dev: `composer require vlucas/phpdotenv -dev`
+  * Instalar dependências em produção: `composer install --no-dev`
 
 * **Comandos GIT**
   * Configurações do git: `cat .git/config`
@@ -19,5 +24,5 @@
   * Se o `Dockerfile` for alterado, no build só serão executadas as linhas que estão abaixo da alteração.
   * `Volumes` servem para apontar pastas remotamente.
   * `- ~/.composer:/root/.composer` para apontar o cache do composer pra nossa pasta de usuário.
-  * `Composer.json:` informações do projeto.
-  * `Composer.lock:` dependências do projeto.
+  * `Composer.json:` Dependências necessárias.
+  * `Composer.lock:` Dependências Instaladas.

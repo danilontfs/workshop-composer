@@ -3,10 +3,14 @@
 require_once 'vendor/autoload.php';
 
 use Dotenv\Dotenv;
+use Cocur\Slugify\Slugify;
 
+//DONT ENV
 if(file_exists('.env')){
   $dotenv = Dotenv::createImmutable(__DIR__);
   $dotenv->load();
 }
 
-echo "<pre>"; print_r($_ENV); echo "</pre>"; exit;
+//SLUG IFY
+$slugify = new Slugify();
+echo $slugify->slugify('Hello World!');

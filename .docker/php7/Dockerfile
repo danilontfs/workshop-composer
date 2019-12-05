@@ -16,3 +16,7 @@ RUN chmod +x /usr/bin/composer
 
 # DIRETÓRIO DE EXECUÇÃO
 WORKDIR /php7
+
+# SCRIPT DE INICIALIZAÇÃO
+COPY entrypoint.sh /usr/local/bin/entrypoint.sh
+ENTRYPOINT ["sh","/usr/local/bin/entrypoint.sh"]

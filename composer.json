@@ -1,5 +1,9 @@
 {
     "require": {
-        "vlucas/phpdotenv": "^4.0"
+        "cocur/slugify": "^3.2"
+    },
+    "require-dev": {
+        "vlucas/phpdotenv": "^4.0",
+        "phpunit/phpunit": "^8.4"
     }
 }
