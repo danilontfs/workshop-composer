@@ -28,3 +28,4 @@
   * `Composer.json:` Dependências necessárias.
   * `Composer.lock:` Dependências Instaladas.
   * A dependência `hirak/prestissimo` serve para deixar os downloads do composer ocorram em paralelo. Foi adicionado no `entrypoint.sh` na execução do container.
+  * É possível alterar o repositório da dependência. Adicionando a nova URL no item `repositories` do arquivo `composer.json`.
