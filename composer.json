@@ -1,5 +1,14 @@
 {
+    "name": "Workshop Composer",
+    "description": "Workshop Composer no PHPConference2019",
+    "authors":{
+      "name": "Danilo Rocha",
+      "email": "danilontfs@gmail.com"
+    },
+    "license": "MIT",
     "require": {
+        "php":">=7.3",
+        "ext-zip":"*",
         "cocur/slugify": "^3.2"
     },
     "require-dev": {
